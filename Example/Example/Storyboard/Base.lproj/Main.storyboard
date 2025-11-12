@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kyh-AS-WrG">
+                                <rect key="frame" x="32" y="334" width="350" height="228"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tq8-Rc-Vkl">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="106"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4f-0B-jXx">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="E4f-0B-jXx" secondAttribute="height" id="eSH-zp-JE2"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Phone"/>
+                                                <connections>
+                                                    <action selector="callPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFR-Z6-Fc4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-d6-9oq">
+                                                <rect key="frame" x="122" y="0.0" width="106" height="106"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="SMS"/>
+                                                <connections>
+                                                    <action selector="sendSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMF-XC-spM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JE-8P-IEC">
+                                                <rect key="frame" x="244" y="0.0" width="106" height="106"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="eMail"/>
+                                                <connections>
+                                                    <action selector="sendMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aet-aI-1jE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0F8-f3-ADB">
+                                        <rect key="frame" x="0.0" y="122" width="350" height="106"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTH-t1-dKP">
+                                                <rect key="frame" x="0.0" y="0.0" width="106" height="106"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Line"/>
+                                                <connections>
+                                                    <action selector="sendLineMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiN-9o-BXT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-eQ-FgL">
+                                                <rect key="frame" x="122" y="0.0" width="106" height="106"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="WhatsApp"/>
+                                                <connections>
+                                                    <action selector="sendWhatsAppMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTi-av-Ee9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DL-0W-5ap">
+                                                <rect key="frame" x="244" y="0.0" width="106" height="106"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kyh-AS-WrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JFJ-dF-oyW"/>
+                            <constraint firstAttribute="trailing" secondItem="kyh-AS-WrG" secondAttribute="trailing" constant="32" id="rRk-7q-jyt"/>
+                            <constraint firstItem="kyh-AS-WrG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zq4-X8-jO4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="344-5f-HYT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991.3043478260872" y="4.0178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Line" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="Phone" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="SMS" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="WhatsApp" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="eMail" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
