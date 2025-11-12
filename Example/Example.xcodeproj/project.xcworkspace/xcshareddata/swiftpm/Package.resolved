@@ -1,0 +1,15 @@
+{
+  "originHash" : "a2e79d5498042fabf076ecbb959f48f4347d2bcc005f47c10be729c3930d600e",
+  "pins" : [
+    {
+      "identity" : "wwcustomerservice",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWCustomerService",
+      "state" : {
+        "revision" : "ee459ddf3e47d03f3f00145ce9aef2447dc580d0",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
