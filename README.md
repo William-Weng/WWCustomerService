@@ -20,6 +20,19 @@ dependencies: [
 |settings(delegate:isAppStoreOpenInside:)|相關參數設定|
 |open(serviceType:)|開啟相關服務|
 
+### Info.plist
+```xml
+<dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>line</string>
+		<string>lineauth</string>
+		<string>lineauth2</string>
+		<string>whatsapp</string>
+	</array>
+</dict>
+```
+
 ### Example
 ```swift
 import UIKit
